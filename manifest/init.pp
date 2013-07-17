@@ -1,5 +1,3 @@
-class FileCreation{
-
     file {'/tmp/test1':
       ensure  => present,
       content => "Hi.",
@@ -14,4 +12,3 @@ class FileCreation{
       ensure => link,
       target => '/tmp/test1',
     }
-}
